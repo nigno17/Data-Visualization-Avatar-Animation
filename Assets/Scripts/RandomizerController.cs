@@ -58,7 +58,7 @@ public class RandomizerController : MonoBehaviour
         byte[] Bytes = mainCameraController.CamCapture();
         frames.Add(Bytes);
 
-        if (tempAnim.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
+        if (tempAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
         { 
             saveOnDisk();
             restartFlag = true;
